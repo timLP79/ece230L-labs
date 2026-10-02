@@ -5,3 +5,4 @@
 *.xpr
 *.DS_Store
 .idea/
+**/*.runs/
