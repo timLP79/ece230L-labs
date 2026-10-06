@@ -17,7 +17,7 @@ the constraints file maps your inputs and outputs to real pins on the FPGA.
 Mika Calderon and Tim Palacios
 
 ## Lab Summary
-In this lab Mika and I learned about how to create combinational logic circuits from truth tables and then implement the Boolean equations derived from the SOP and POS processes. We created two separate modules, Circuit A and Circuit B, and then we connected them together using a top-level module. The output of circuit A was connected to an input of circuit B, which showed how you can connect two Verilog modules together to create a larger circuit. We also learned how the constraints file connects the inputs and outputs in the Verilog design to the switches and LEDs on the Basys 3 board. 
+In this lab Mika and I learned about how to create combinational logic circuits from truth tables and then implement the Boolean equations derived from the SOP and POS processes. We created two separate modules, Circuit A and Circuit B, and then we connected them together using a top-level module. The output of circuit A was connected to an input of circuit B, which showed how you can connect two Verilog modules together to create a larger circuit. We also learned how the constraints file connects the inputs and outputs in the Verilog design to the switches and LEDs on the Basys3 board. 
 
 ## Lab Questions
 
@@ -28,4 +28,5 @@ The Top Level file acts as a main connection point for the design. It creates in
 The Constraints file tells Vivado how the inputs and outputs in our Verilog design connect to the physical pins on the board. It maps the switches and the LEDs from the Top Level file to their actual pin locations on the Basys3 board. As an example, the constraints file maps sw[0] to FPGA pin V17. It also sets the voltage standard for the pins.
  
 ### 3 - Was the selection of Minterm and Maxterm correct for each circuit? What would you have chosen?
-For this lab Maxterms were chosen for Circuit A and Minterms where chosen for Circuit B. Both selections were correct, but I would have chosen Minterms for Circuit A as there were only 4 rows where the output is 1, therefore the K-map process would have been slightly less complicated with fewer terms to consider. For Circuit B, either way would have been fine because it was evenly divided 8 rows where the output was 0 and 8 rows where the output was 1. 
+For this lab Maxterms were chosen for Circuit A and Minterms were chosen for Circuit B. Both selections were correct, but I would have chosen Minterms for Circuit A as there were only 4 rows where the output is 1, therefore the K-map process would have been slightly less complicated with fewer terms to consider. For Circuit B, either way would have been fine because it was evenly divided with 8 rows where the output was 0 and 8 rows where the output was 1. 
+
