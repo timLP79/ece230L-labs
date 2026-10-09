@@ -5,10 +5,7 @@ module adder(
     output Carry
 );
 
+    assign Y = A ^ B;
+    assign Carry = A & B;
 
-
-
-
-
-
-
+endmodule
