@@ -7,3 +7,5 @@
 .idea/
 **/*.runs/
 **/*.srcs/
+*.pdf
+docs/
