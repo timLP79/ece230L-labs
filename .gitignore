@@ -9,3 +9,4 @@
 **/*.srcs/
 *.pdf
 docs/
+.svlangserver/
