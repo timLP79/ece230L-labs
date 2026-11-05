@@ -1,7 +1,7 @@
 module test();
-    reg [3:0] sw;
+    reg [15:0] sw;
     reg btnC;
-    wire [5:0] led;
+    wire [15:0] led;
 
     top uut(
         .sw(sw),
@@ -53,7 +53,7 @@ module test();
     initial begin
         $dumpvars(0,test);
         btnC = 0;
-        sw = 4'b0;
+        sw = 16'b0;
         toggle_clock();
         
         set_check_dff(0, 0);
