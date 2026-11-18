@@ -13,7 +13,7 @@ module ripple_counter(
 
     t_flip_flop stage2(
         .T(1'b1),
-        .clk(Q[0]),
+        .clk(~Q[0]),
         .rst(rst),
         .Q(Q[1]),
         .NotQ()
@@ -21,7 +21,7 @@ module ripple_counter(
 
     t_flip_flop stage3(
         .T(1'b1),
-        .clk(Q[1]),
+        .clk(~Q[1]),
         .rst(rst),
         .Q(Q[2]),
         .NotQ()
