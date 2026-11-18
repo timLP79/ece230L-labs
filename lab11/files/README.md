@@ -26,6 +26,6 @@ With the original connections, each flip-flop’s Q output clocks the next flip-
 
 In our code, we used ~Q[0] and ~Q[1] to clock the next stages. This makes those stages toggle when the previous Q output changes from 1 to 0. Our counter starts at 000 and goes to 001 on the first clock edge. It continues counting up to 111, then returns to 000. It still divides the input clock by 8.
 
-### 3 - What width of ~~ring~~ counter would you use to get to an output of ~1KHz?
+### 3 - What width of ~~ring~~ ripple counter would you use to get to an output of ~1KHz?
 Using the 100 MHz board oscillator, each ripple-counter stage divides the frequency by two, so the output frequency is 100,000,000 / 2^N. Solving for 1,000 Hz gives N = log2(100,000) = about 16.61. We would use 17 stages, which gives about 763 Hz. A 16-stage counter gives about 1,526 Hz, so 17 stages is closer to 1 kHz. A ripple counter cannot produce exactly 1 kHz from 100 MHz because it only divides by powers of two.
 
